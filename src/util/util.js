@@ -4,7 +4,18 @@ const getParams = (url) =>
     return params;
   });
 
-const appendParams = (url, params) => {
+const getQuery = (url) => 
+  url.match(/\?(.*)/g).map((o) => {
+    const [, params ] = o.match(/{(\w+)}/);
+      return params
+  });
+
+
+const appendParams = (url, params = []) => {
+
+  if (params.length === 0) {
+    return url;
+  }
   let uri = url;
 
   params.forEach((p) => {
@@ -27,6 +38,7 @@ const appendParams2 = (url, params) => {
 
 module.exports = {
   getParams,
+  getQuery,
   appendParams,
   appendParams2,
 };
