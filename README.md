@@ -8,7 +8,8 @@ BE for Zendesk Node.js Service for Automation
 | Github FE              | https://github.com/paulinaludwig/Zendesk-Service-FE          |
 | Github BE              | https://github.com/paulinaludwig/Zendesk-Service-BE          |
 
-Zendesk API: https://developer.zendesk.com/rest_api/docs/support/introduction 
+Zendesk Support API: https://developer.zendesk.com/rest_api/docs/support/introduction 
+Zendesk Help Center API: https://developer.zendesk.com/rest_api/docs/help_center/introduction
 
 ## Scripts
 
@@ -31,7 +32,9 @@ Run scripts to install dependencies and start the project locally. Aquire necess
 # Making requests
 
 View Zendesk API Documentation for more information on API methods and parameters. 
-Authenticating via API token. 
+Authenticating via API token.  
+
+Current setup makes manual and automatic requests to the Zendesk Support API and the Zendesk Help Center API, which require the same authentication. 
 
 ## Automation 
 
