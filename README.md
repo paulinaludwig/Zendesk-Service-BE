@@ -33,3 +33,18 @@ Run scripts to install dependencies and start the project locally. Aquire necess
 View Zendesk API Documentation for more information on API methods and parameters. 
 Authenticating via API token. 
 
+## Automation 
+
+Automatic updates are configured in the server, and serve as private routes (not accessible via the frontend, however displaying the frequency and task name may be added in the future). 
+
+Current automated tasks: 
+
+Task: Fetch all tickets
+Frequency: Every 5 mins
+
+Due to the scaleability in mind with this application, all that would be required to add more routes is to simply add their configuration to the existing list. 
+
+## Manual 
+
+Manual updates are made via the frontend user interface. The agent/user is able to update single items such as a ticket, user or article by providing the appropriate parameters. 
+
