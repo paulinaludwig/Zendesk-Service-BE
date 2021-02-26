@@ -32,6 +32,15 @@ Run scripts to install dependencies and start the project locally. Aquire necess
 
 # Making requests
 
+Initial request i made to the following route/end-point:
+
+/users/login
+
+If the user has supplied the correct password they will recieve a JWT token which keeps the connection alive. 
+The token is stored in localstorage and expires after 24h. 
+
+Once the user has been authenticated, they can access all so called public routes which are used in the frontend for making manual requests. 
+
 View Zendesk API Documentation for more information on API methods and parameters. 
 Authenticating via API token.  
 
