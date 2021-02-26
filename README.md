@@ -9,6 +9,7 @@ BE for Zendesk Node.js Service for Automation
 | Github BE              | https://github.com/paulinaludwig/Zendesk-Service-BE          |
 
 Zendesk Support API: https://developer.zendesk.com/rest_api/docs/support/introduction 
+
 Zendesk Help Center API: https://developer.zendesk.com/rest_api/docs/help_center/introduction
 
 ## Scripts
