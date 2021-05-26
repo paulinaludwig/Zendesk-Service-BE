@@ -11,7 +11,7 @@ router.get('/zendesk/endpoints', auth, (_, res) => {
     const publicEndpoints = routes.filter((o) => !o.automated);
     res.send(publicEndpoints);
   } catch (e) {
-    res.status(400).send();
+    res.status(400).send('Error: rouuter', e);
   }
 });
 
@@ -30,9 +30,11 @@ routes
           url: zendeskURI,
         });
 
+        console.log('data', data);
+
         res.send(data);
       } catch (e) {
-        res.status(400).send();
+        res.status(400).send('Error: routes', e);
       }
     });
   });
