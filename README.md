@@ -48,6 +48,8 @@ Current setup makes manual and automatic requests to the Zendesk Support API and
 
 ## Automation 
 
+To enable automations, change the ENABLE_TASKS flag in the .env file to TRUE. 
+
 Automatic updates are configured in the server, and serve as private routes (not accessible via the frontend, however displaying the frequency and task name may be added in the future). 
 
 Current automated tasks: 

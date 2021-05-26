@@ -125,9 +125,17 @@ const routes = [
     name: '',
     category: '',
     type: Type.GET,
+    route: '/api/v2/ticket',
+    automated: true,
+    interval: '*/50 * * * *',
+  },
+  {
+    name: '',
+    category: '',
+    type: Type.GET,
     route: '/api/v2/tickets',
     automated: true,
-    interval: '*/5 * * * *',
+    interval: '*/1 * * * *',
   },
 ];
 
